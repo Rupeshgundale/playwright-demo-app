@@ -13,8 +13,8 @@ test('assertions Demo', async({page}) => {
 
     //assertion
     // check element present or not
-    await expect(page.locator('data-test=secondary-header')).toHaveCount(1)
-
+    await expect(page.locator('text="Sauce Labs Backpack"')).toHaveCount(1)
+    await expect(page.locator('[data-test="title"]')).toBeVisible();
    
     await page.pause()
 })
