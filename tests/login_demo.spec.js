@@ -169,3 +169,34 @@ test('all items-checkout page',async({page}) => {
     await page.close()
 
 }); 
+
+test('username pass page',async({page}) => {
+
+    await page.goto('https://saucedemo.com')
+    
+    await page.locator("input[name='user-name']").click()
+    await page.locator("input[name='user-name']").fill("standard_user")
+    
+    await page.locator("input[name='password']").click()
+    await page.locator("input[name='password']").fill('secret_sauce')
+    await page.locator('input[data-test="login-button"]').click();
+    await expect(page.locator("input[name='password']")).toBeVisible();
+    await page.close()
+});
+
+test('username page',async({page}) => {
+
+    await page.goto('https://saucedemo.com')
+
+    await page.locator("input[name='user-name']").click()
+    await page.locator("input[name='user-name']").fill("standard_user")
+    await expect(page.locator("input[name='user-name']")).toBeVisible();
+
+    await page.locator("input[name='password']").click()
+    
+    await page.locator('input[data-test="login-button"]').click();
+
+    
+    await page.pause()
+   
+});
