@@ -7,7 +7,7 @@ test('assertions Demo', async({page}) => {
     await page.locator("input[name='user-name']").fill("standard_user")
     await page.locator('input[data-test="login-button"]').click();
     await page.pause()
-    await expect(page.locator('h3[data-test="error"]')).toHaveText('Epic sadface: Password is equired')
+    await expect(page.locator('h3[data-test="error"]')).toHaveText('Epic sadface: Password is required')
     
     // await page.locator("input[name='password']").click()
 
