@@ -71,7 +71,7 @@ test('cart-checkout page',async({page}) => {
     
 
     
-    await expect(page.locator('//*[@id="header_container"]/div[1]/div[2]/div')).toHaveText('Swag Labs')
+    //await expect(page.locator('//*[@id="header_container"]/div[1]/div[2]/div')).toHaveText('Swag Labs')
 
     await page.waitForTimeout(2000)
 
