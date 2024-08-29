@@ -16,19 +16,18 @@ form
     height: 40%;
     background-color: #aad2d8;
     padding: 10px;
-    margin: 10px;
     border: 2px solid #000000;
     border-radius: 4px;
     align-items: center;
-
+    margin: 25px 50px 75px 100px;
 }
 
 input[type=text], input[type=UserName] {
-  width: 30%;
+  width: 30% ;
   height: 30px;
-  margin: 8px 0;
   border: 1px solid #ccc;
-  align-items: center;
+  padding: center;
+  
 }
 
 input[type=text], input[type=password] {
@@ -44,16 +43,30 @@ button {
   background-color: #e7ece8;
   color: rgb(9, 9, 9);
   padding: 100%;
-  margin: 8px 0;
+  margin: 30px ;
   width: 300%;
   height: 30%;
   align-items: center;
 }
-.display{
-    align-items: center;
+
+.btn{
+  margin: 10px 50px 10px 200px;
 }
 
+h1{
+  text-align: center;
+}
 
+p{
+  text-align: center;
+}
+.input-box{
+  text-align: center;
+}
+.passward{
+  text-align: center;
+  padding: center;
+}
 button:hover {
   opacity: 0.8;
 }

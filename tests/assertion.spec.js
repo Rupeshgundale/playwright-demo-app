@@ -23,11 +23,11 @@ test('assertions Demo', async({page}) => {
     // await page.locator('input[data-test="login-button"]').click();
     
     //check element hidden or visible
-    //await expect(page.locator("text=Epic sadface: You can only access '/inventory.html' when you are logged in.")).toBeVisible()
-    //await expect(page.locator("text=Epic sadface: You can only access '/inventory.html' when you are logged in.")).toBeHidden()
+    //await expect(page.locator("")).toBeVisible()
+    //await expect(page.locator("")).toBeHidden()
 
     //check element enabled or disabled
-   // await expect(page.locator("text=Epic sadface: You can only access '/inventory.html' when you are logged in.")).toBeEnabled()
-   // await expect(page.locator("text=Epic sadface: You can only access '/inventory.html' when you are logged in.")).toBeDisabled()
+   // await expect(page.locator("")).toBeEnabled()
+   // await expect(page.locator("")).toBeDisabled()
     
 });
